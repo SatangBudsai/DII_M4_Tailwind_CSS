@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<body>
-    <div>
-        <div >
-            <div>
-                home
-            </div>
-            <div>edit</div>
-            <div>about</div>
+  <body>
+    <div class="flex flex-col">
+      <div class="flex bg-stone-200">
+        <div
+          class="p-2 m-2 basis-15 text-center bg-stone-400 hover:bg-cyan-500"
+        >
+          home
         </div>
-        <div >
-          <div >
-                <div>
-                    hello
-                </div>
-                <div>world</div>
-                <div>flex</div>
-            </div>
-            <div>content</div>
+        <div
+          class="p-2 m-2 basis-15 text-center bg-stone-400 hover:bg-cyan-500"
+        >
+          edit
         </div>
+        <div
+          class="p-2 m-2 basis-15 text-center bg-stone-400 hover:bg-cyan-500"
+        >
+          about
+        </div>
+      </div>
+      <div class="flex">
+        <div class="flex flex-col grow">
+          <div class="p-2 m-2 text-left bg-stone-400 hover:bg-cyan-500">
+            hello
+          </div>
+          <div class="p-2 m-2 text-left bg-stone-400 hover:bg-cyan-500">
+            world
+          </div>
+          <div class="p-2 m-2 text-left bg-stone-400 hover:bg-cyan-500">
+            flex
+          </div>
+        </div>
+        <div class="p-2 grow-[10]">content</div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
